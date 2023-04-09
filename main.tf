@@ -14,7 +14,10 @@ resource "google_compute_instance" "default" {
     }
   }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c7a7e33425e7e8b2cbdbab193cdc044f869d19e2
   network_interface {
     network = "default"
 
