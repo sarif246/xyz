@@ -3,10 +3,6 @@ resource "google_compute_instance" "default" {
   machine_type = "e2-medium"
   zone         = "us-central1-a"
 
-  tags = ["foo", "bar"]
-
-  boot_disk {
-    initialize_params {
       image = "debian-cloud/debian-11"
       labels = {
         my_label = "value"
@@ -14,10 +10,6 @@ resource "google_compute_instance" "default" {
     }
   }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> c7a7e33425e7e8b2cbdbab193cdc044f869d19e2
   network_interface {
     network = "default"
 
@@ -26,10 +18,6 @@ resource "google_compute_instance" "default" {
     }
   }
 
-  metadata = {
-    foo = "bar"
-  }
 
-  metadata_startup_script = "echo hi > /test.txt"
 
 }
